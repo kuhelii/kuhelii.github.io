@@ -1,1 +1,30 @@
-Hello ,I am Kuheli,A Frontend Developer.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuheli | Frontend Developer</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f5f5f5; margin: 0; text-align: center;">
+
+    <p style="color: red; font-size: 24px; font-weight: bold; padding: 20px; border: 2px solid red; border-radius: 10px; transition: 0.3s; cursor: pointer;">
+        Hello, I am <b>Kuheli</b><br>A Frontend Developer.
+    </p>
+
+    <script>
+        document.querySelector("p").addEventListener("mouseover", function() {
+            this.style.backgroundColor = "red";
+            this.style.color = "white";
+            this.style.transform = "scale(1.1)";
+        });
+
+        document.querySelector("p").addEventListener("mouseout", function() {
+            this.style.backgroundColor = "transparent";
+            this.style.color = "red";
+            this.style.transform = "scale(1)";
+        });
+    </script>
+
+</body>
+</html>
+
